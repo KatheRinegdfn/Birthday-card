@@ -1,0 +1,162 @@
+/**
+ * Created by ASUS-PC on 2017-09-05.
+ * Author:曾相荧
+ * Email:948691254@qq.com
+ */
+
+
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*擦火柴*/
+body{
+    position: relative;
+    z-index: -1;
+    margin:0;
+    padding:5px;
+}
+.RubMatches{
+    width: 6.21rem;
+    height: 11.04rem;
+    background: url("../images/bg.jpg") no-repeat;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+.RubMatches .Matchbox{
+    width: 2.99rem;
+    height: 2.41rem;
+    background: url("../images/matchbox.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.RubMatches .MoveMatches{
+    width: 2.25rem;
+    height: 1.20rem;
+    position: absolute;
+    top: 42%;
+    left: 53%;
+    z-index: 10;
+}
+.RubMatches .MoveMatches .matches{
+    width: 2.0rem;
+    height: 1.20rem;
+    background: url(../images/matchstick.png) no-repeat -2.03rem -2.34rem;
+    background-size: 411%;
+    position: relative;
+}
+.RubMatches .MoveMatches .matches-follow{
+    width: 0.5rem;
+    height: 0.35rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.RubMatches .context{
+    width: 1.70rem;
+    height: 0.5rem;
+    background: url(../images/matchstick.png) no-repeat 0.09rem -4.86rem;
+    background-size: 620%;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    margin-left: -0.04rem;
+}
+/*火光*/
+.RubMatches .MoveMatches .fire{
+    width: 2.0rem;
+    height: 2.0rem;
+    background: url(../images/matchstick.png) no-repeat -0.1rem -0.24rem;
+    background-size: 339%;
+    position: absolute;
+    top: 0%;
+    left: -42%;
+    animation: fireMove 2s infinite;
+    -webkit-animation:fireMove 0.2s infinite;
+    display: none;
+}
+@keyframes fireMove {
+    100%{
+        transform: scale(1.2);
+    }
+}
+@-webkit-keyframes fireMove {
+    100%{
+        transform: scale(1.2);
+    }
+}
+/*点蜡烛*/
+.lightCandle .content{
+    width: 2.50rem;
+    height: 0.5rem;
+    background: url(../images/matchstick.png) no-repeat -2.78rem -5.69rem;
+    background-size: 536%;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    margin-left: -0.14rem;
+    display: none;
+}
+@keyframes cakeShow {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes cakeShow {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*蛋糕上的火光*/
+.RubMatches .CakefireOne{
+    width: 2.0rem;
+    height: 2.0rem;
+    background: url(../images/matchstick.png) no-repeat -2.1rem -0.24rem;
+    background-size: 339%;
+    position: absolute;
+    top: 5.64rem;
+    left: 1.4rem;
+    animation: fireMove 2s infinite;
+    -webkit-animation: fireMove 0.2s infinite;
+    display: none;
+}
+
+.RubMatches .CakefireTwo{
+    width: 2.0rem;
+    height: 2.0rem;
+    background: url(../images/matchstick.png) no-repeat -4.1rem -0.24rem;
+    background-size: 339%;
+    position: absolute;
+    top: 6.08rem;
+    left: 2.05rem;
+    animation: fireMove 2s infinite;
+    -webkit-animation: fireMove 0.2s infinite;
+    display: none;
+}
+
+/*蛋糕上的焦点*/
+.RubMatches .focusOne{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 6.64rem;
+    left: 2.50rem;
+    display: none;
+}
+.RubMatches .focusTwo{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 7.0rem;
+    left: 3.25rem;
+    display: none;
+}

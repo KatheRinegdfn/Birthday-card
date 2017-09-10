@@ -1,0 +1,86 @@
+/**
+ * Created by ASUS-PC on 2017-09-05.
+ * Author:曾相荧
+ * Email:948691254@qq.com
+ */
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background-color: #FF5C6A;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+.swiper-slide:first-child{
+    background-color: #fff;
+}
+.sheImg{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6rem;
+    border: 4px solid #F97EDB;
+    overflow: hidden;
+    top: 2rem;
+}
+.content{
+    position: absolute;
+    color: #fff;
+    bottom: 1rem;
+    font-size: 30px;
+}
+.pic{
+    width: 16rem;
+    height: auto;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-left: -8rem;
+}
+.context {
+    width: 16rem;
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    margin-left: -8rem;
+}
+.context p {
+    font-size: 20px;
+    border-top: 3px solid pink;
+    padding: 6px;
+    border-bottom: 3px solid pink;
+    line-height: 40px;
+}
